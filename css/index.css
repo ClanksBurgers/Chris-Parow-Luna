@@ -1,0 +1,92 @@
+body {
+    background-color: #00002b;
+    color:#85f1f1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section {
+    margin: 50px 0;
+    padding: 10px 0;
+}
+
+#About {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgb(0, 0, 0);
+    font-family: 'Segoe UI', Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+    text-align: center;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1em;
+}
+
+img[alt="Chris Parow and R2D2"] 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img[alt="My Cat Morty on a Couch"] 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Experience ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#Experience ul li {
+    display: block;
+    background: #121e50;
+    color: #b1cccc;
+    border-radius: 7%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 10px;
+    margin: 15px 0;
+    font-size: 1.5em;
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#Connect a {
+    color: rgb(202, 231, 231);
+}
+
+#Connect ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#Connect ul li {
+    display: block;
+    background: #121e50;
+    color: #b1cccc;
+    border-radius: 7%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 10px;
+    margin: 15px 0;
+    font-size: 1.5em;
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
