@@ -1,36 +1,58 @@
-#Connect ul {
-	display: flex;
-	gap: 20px;
-	justify-content: center;
-	padding: 0;
-	list-style: none;
-	margin: 0;
-}
 
-#Connect li {
-	margin: 0;
-	padding: 0;
-}
-
-#Connect a {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: #e0e0e0;
+/* General Layout */
+body {
+	background: #f5ecd7;
 	color: #222;
-	text-decoration: none;
-	padding: 8px 14px;
-	border-radius: 6px;
-	font-weight: 500;
-	font-size: 1em;
-	box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-	transition: background 0.2s, color 0.2s;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
-#Connect a:hover {
-	background: #444;
-	color: #fff;
+header, section {
+	max-width: 800px;
+	margin: 32px auto;
+	padding: 16px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
+
+h1, h2, h3 {
+	color: #222;
+	font-weight: bold;
+}
+
+/* Lists and Links */
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	margin: 10px 0;
+	padding: 8px 12px;
+	background: #f0f0f0;
+	border-radius: 4px;
+}
+
+a {
+	color: #222;
+	text-decoration: underline;
+	transition: color 0.2s;
+}
+
+a:hover {
+	color: #555;
+}
+
+img {
+	display: block;
+	margin: 20px auto;
+	border-radius: 6px;
+	max-width: 100%;
+	height: auto;
+}
+
 /* Experience section Flexbox layout */
 #Experience ul {
 	padding: 0;
@@ -67,53 +89,39 @@
 	color: #333;
 	margin-top: 2px;
 }
-body {
-	background: #f5ecd7;
-	color: #222;
-	font-family: Arial, sans-serif;
+
+/* Connect section Flexbox layout */
+#Connect ul {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+
+#Connect li {
 	margin: 0;
 	padding: 0;
+	background: none;
 }
 
-h1, h2, h3 {
+#Connect a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #e0e0e0;
 	color: #222;
-	font-weight: bold;
-}
-
-header, section {
-	max-width: 800px;
-	margin: 32px auto;
-	padding: 16px;
-	background: #fff;
-	border-radius: 8px;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-ul {
-	list-style: none;
-	padding: 0;
-}
-
-li {
-	margin: 10px 0;
-	padding: 8px 12px;
-	background: #f0f0f0;
-	border-radius: 4px;
-}
-
-a {
-	color: #222;
-	text-decoration: underline;
-}
-
-a:hover {
-	color: #555;
-}
-
-img {
-	display: block;
-	margin: 20px auto;
+	text-decoration: none;
+	padding: 8px 14px;
 	border-radius: 6px;
-	max-width: 100%;
-	height: auto;
+	font-weight: 500;
+	font-size: 1em;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+	transition: background 0.2s, color 0.2s;
+}
+
+#Connect a:hover {
+	background: #444;
+	color: #fff;
 }
