@@ -1,3 +1,80 @@
+/* Messages Section Styling */
+#messages {
+	max-width: 800px;
+	margin: 32px auto;
+	padding: 16px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#messages h2 {
+	text-align: center;
+	color: #222;
+	margin-bottom: 18px;
+}
+
+#messages ul {
+	list-style: none;
+	padding: 0;
+}
+
+#messages li {
+	background: #f0f0f0;
+	color: #222;
+	border-radius: 12px;
+	margin: 12px 0;
+	padding: 12px 18px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+#messages a {
+	color: #2a5bd7;
+	font-weight: 600;
+	text-decoration: underline;
+	margin-right: 8px;
+}
+
+#messages span {
+	flex: 1;
+	color: #333;
+	font-size: 1em;
+}
+
+#messages button {
+	background: #e0e0e0;
+	color: #222;
+	border: none;
+	border-radius: 6px;
+	padding: 6px 14px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background 0.2s, color 0.2s;
+}
+
+#messages button:hover {
+	background: #444;
+	color: #fff;
+}
+
+/*Footer*/
+footer {
+	display: block;
+	background: #fff;
+	color: #222;
+	padding: 16px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1em;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+	margin: 32px auto 0 auto;
+	max-width: 800px;
+}
 /* Skills Section Styling */
 #Skills ul {
 	display: block;
@@ -207,18 +284,7 @@ img {
 	color: #fff;
 }
 
-/* Footer */
-footer {
-    max-width: 800px;
-    margin: 32px auto 0 auto;
-    padding: 16px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    text-align: center;
-    color: #555;
-    font-size: 1em;
-	font-weight: bold;
-}
+
 
 /* Tablet */
 @media (max-width: 1024px) {
