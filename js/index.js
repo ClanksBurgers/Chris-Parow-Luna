@@ -14,7 +14,7 @@ for (let i = 0; i < skills.length; i++) {
     skillsList.appendChild(skill);
 };
 
-//Form Submit
+//Message Forms
 const messageForm = document.forms['leave_messages'];
 messageForm.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -29,7 +29,7 @@ messageForm.addEventListener('submit', function(event) {
     const messageList = messageSection.querySelector('ul');
     const newMessage = document.createElement('li');
     newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a>: <span>${usersMessage}</span>`;
-
+    //Add Remove Button
     const removeButton = document.createElement('button');
     removeButton.innerText = 'remove';
     removeButton.type = 'button';
@@ -40,3 +40,32 @@ messageForm.addEventListener('submit', function(event) {
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
 });
+
+// Fetch GitHub Repos
+fetch('https://api.github.com/users/ClanksBurgers/repos')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Failed to fetch GitHub");
+        }
+        return response.json();
+    })
+    .then(repositories => {
+        console.log(repositories);
+        const projectSection = document.getElementById('Projects');
+        const projectList = projectSection.querySelector('ul');
+        for (let i = 0; i < repositories.length; i++) {
+            const project = document.createElement('li');
+            const projectLink = document.createElement('a');
+            projectLink.href = repositories[i].html_url;
+            projectLink.innerText = repositories[i].name;
+            projectLink.target = "_blank"; // Open in new tab
+            project.appendChild(projectLink);
+            projectList.appendChild(project);
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching repositories:', error);
+        const projectSection = document.getElementById('Projects');
+        const projectList = projectSection.querySelector('ul');
+        projectList.innerHTML = '<li>Unable to load projects. Please try again later.</li>';
+    });
